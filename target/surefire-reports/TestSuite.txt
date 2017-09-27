@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 23, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.87 sec <<< FAILURE!
+testDefaultCountry(TestCases.CountryTest)  Time elapsed: 0.081 sec  <<< FAILURE!
+java.lang.AssertionError: Verify country of origin is US in all results expected [USA] but found [SA]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at TestCases.CountryTest.testDefaultCountry(CountryTest.java:21)
+

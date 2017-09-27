@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
+              <span class="suite-name border-failed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Command_line_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Command_line_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Command_line_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Command_line_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Command_line_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Command_line_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">23 methods, 1 failed,   22 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.CountryTest" hash-for-method="testDefaultCountry">testDefaultCountry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.LimitCountTest" hash-for-method="TestDefaultLimit">TestDefaultLimit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.LimitCountTest" hash-for-method="TestLimit0_Negative">TestLimit0_Negative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.CountryTest" hash-for-method="ValidCountryARM">ValidCountryARM</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.CountryTest" hash-for-method="ValidCountryGBR">ValidCountryGBR</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.CountryTest" hash-for-method="invalidCountryNegative">invalidCountryNegative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.ResponseStatusCodeTest" hash-for-method="responseTermCountry">responseTermCountry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.ResponseStatusCodeTest" hash-for-method="responseTermCountryMedia">responseTermCountryMedia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.ResponseStatusCodeTest" hash-for-method="responseTermCountryMedialimit">responseTermCountryMedialimit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.MediaTest" hash-for-method="testAudiobookMedia">testAudiobookMedia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.MediaTest" hash-for-method="testDefaultMovie">testDefaultMovie</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.MediaTest" hash-for-method="testDefaultMusicBand">testDefaultMusicBand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.MediaTest" hash-for-method="testDefaultSong">testDefaultSong</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.MediaTest" hash-for-method="testEbookMedia">testEbookMedia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.MediaTest" hash-for-method="testGenreBasedOnMedia">testGenreBasedOnMedia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.LimitCountTest" hash-for-method="testLimit1">testLimit1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.LimitCountTest" hash-for-method="testLimit200">testLimit200</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.LimitCountTest" hash-for-method="testLimitCount20">testLimitCount20</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.MediaTest" hash-for-method="testMovieMedia">testMovieMedia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.MediaTest" hash-for-method="testPodCastMedia">testPodCastMedia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.MediaTest" hash-for-method="testShortFilmMedia">testShortFilmMedia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.MediaTest" hash-for-method="testSoftwareMedia">testSoftwareMedia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="TestCases.MediaTest" hash-for-method="testTvShowMedia">testTvShowMedia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCases.CountryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDefaultCountry">
+                  </a> <!-- testDefaultCountry -->
+                  <span class="method-name">testDefaultCountry</span>
+                  <div class="stack-trace">java.lang.AssertionError: Verify country of origin is US in all results expected [USA] but found [SA]
+	at TestCases.CountryTest.testDefaultCountry(CountryTest.java:21)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.ResponseStatusCodeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="responseTermCountry">
+                  </a> <!-- responseTermCountry -->
+                  <span class="method-name">responseTermCountry</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="responseTermCountryMedia">
+                  </a> <!-- responseTermCountryMedia -->
+                  <span class="method-name">responseTermCountryMedia</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="responseTermCountryMedialimit">
+                  </a> <!-- responseTermCountryMedialimit -->
+                  <span class="method-name">responseTermCountryMedialimit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.MediaTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAudiobookMedia">
+                  </a> <!-- testAudiobookMedia -->
+                  <span class="method-name">testAudiobookMedia</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDefaultMovie">
+                  </a> <!-- testDefaultMovie -->
+                  <span class="method-name">testDefaultMovie</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDefaultMusicBand">
+                  </a> <!-- testDefaultMusicBand -->
+                  <span class="method-name">testDefaultMusicBand</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDefaultSong">
+                  </a> <!-- testDefaultSong -->
+                  <span class="method-name">testDefaultSong</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEbookMedia">
+                  </a> <!-- testEbookMedia -->
+                  <span class="method-name">testEbookMedia</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGenreBasedOnMedia">
+                  </a> <!-- testGenreBasedOnMedia -->
+                  <span class="method-name">testGenreBasedOnMedia</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMedia">
+                  </a> <!-- testMovieMedia -->
+                  <span class="method-name">testMovieMedia</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPodCastMedia">
+                  </a> <!-- testPodCastMedia -->
+                  <span class="method-name">testPodCastMedia</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testShortFilmMedia">
+                  </a> <!-- testShortFilmMedia -->
+                  <span class="method-name">testShortFilmMedia</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSoftwareMedia">
+                  </a> <!-- testSoftwareMedia -->
+                  <span class="method-name">testSoftwareMedia</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTvShowMedia">
+                  </a> <!-- testTvShowMedia -->
+                  <span class="method-name">testTvShowMedia</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.CountryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidCountryARM">
+                  </a> <!-- ValidCountryARM -->
+                  <span class="method-name">ValidCountryARM</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidCountryGBR">
+                  </a> <!-- ValidCountryGBR -->
+                  <span class="method-name">ValidCountryGBR</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCountryNegative">
+                  </a> <!-- invalidCountryNegative -->
+                  <span class="method-name">invalidCountryNegative</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.LimitCountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestDefaultLimit">
+                  </a> <!-- TestDefaultLimit -->
+                  <span class="method-name">TestDefaultLimit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestLimit0_Negative">
+                  </a> <!-- TestLimit0_Negative -->
+                  <span class="method-name">TestLimit0_Negative</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLimit1">
+                  </a> <!-- testLimit1 -->
+                  <span class="method-name">testLimit1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLimit200">
+                  </a> <!-- testLimit200 -->
+                  <span class="method-name">testLimit200</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLimitCount20">
+                  </a> <!-- testLimitCount20 -->
+                  <span class="method-name">testLimitCount20</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
+  &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.CountryTest&quot;/&gt;
+      &lt;class name=&quot;TestCases.LimitCountTest&quot;/&gt;
+      &lt;class name=&quot;TestCases.MediaTest&quot;/&gt;
+      &lt;class name=&quot;TestCases.ResponseStatusCodeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(23);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'ValidCountryARM')
+data.setCell(0, 2, 'TestCases.CountryTest')
+data.setCell(0, 3, 793);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'invalidCountryNegative')
+data.setCell(1, 2, 'TestCases.CountryTest')
+data.setCell(1, 3, 141);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestDefaultLimit')
+data.setCell(2, 2, 'TestCases.LimitCountTest')
+data.setCell(2, 3, 135);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLimit200')
+data.setCell(3, 2, 'TestCases.LimitCountTest')
+data.setCell(3, 3, 131);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testLimitCount20')
+data.setCell(4, 2, 'TestCases.LimitCountTest')
+data.setCell(4, 3, 95);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TestLimit0_Negative')
+data.setCell(5, 2, 'TestCases.LimitCountTest')
+data.setCell(5, 3, 90);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'responseTermCountry')
+data.setCell(6, 2, 'TestCases.ResponseStatusCodeTest')
+data.setCell(6, 3, 76);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testDefaultCountry')
+data.setCell(7, 2, 'TestCases.CountryTest')
+data.setCell(7, 3, 74);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testLimit1')
+data.setCell(8, 2, 'TestCases.LimitCountTest')
+data.setCell(8, 3, 65);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'responseTermCountryMedia')
+data.setCell(9, 2, 'TestCases.ResponseStatusCodeTest')
+data.setCell(9, 3, 59);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testDefaultMovie')
+data.setCell(10, 2, 'TestCases.MediaTest')
+data.setCell(10, 3, 37);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'ValidCountryGBR')
+data.setCell(11, 2, 'TestCases.CountryTest')
+data.setCell(11, 3, 33);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testDefaultSong')
+data.setCell(12, 2, 'TestCases.MediaTest')
+data.setCell(12, 3, 32);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testAudiobookMedia')
+data.setCell(13, 2, 'TestCases.MediaTest')
+data.setCell(13, 3, 28);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'responseTermCountryMedialimit')
+data.setCell(14, 2, 'TestCases.ResponseStatusCodeTest')
+data.setCell(14, 3, 27);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testDefaultMusicBand')
+data.setCell(15, 2, 'TestCases.MediaTest')
+data.setCell(15, 3, 26);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testSoftwareMedia')
+data.setCell(16, 2, 'TestCases.MediaTest')
+data.setCell(16, 3, 26);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testShortFilmMedia')
+data.setCell(17, 2, 'TestCases.MediaTest')
+data.setCell(17, 3, 25);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testMovieMedia')
+data.setCell(18, 2, 'TestCases.MediaTest')
+data.setCell(18, 3, 19);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testEbookMedia')
+data.setCell(19, 2, 'TestCases.MediaTest')
+data.setCell(19, 3, 17);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testTvShowMedia')
+data.setCell(20, 2, 'TestCases.MediaTest')
+data.setCell(20, 3, 17);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testPodCastMedia')
+data.setCell(21, 2, 'TestCases.MediaTest')
+data.setCell(21, 3, 17);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testGenreBasedOnMedia')
+data.setCell(22, 2, 'TestCases.MediaTest')
+data.setCell(22, 3, 17);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.CountryTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ValidCountryARM</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ValidCountryGBR</span>
+                <span class="method-start">794 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidCountryNegative</span>
+                <span class="method-start">827 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDefaultCountry</span>
+                <span class="method-start">968 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.LimitCountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TestDefaultLimit</span>
+                <span class="method-start">1049 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestLimit0_Negative</span>
+                <span class="method-start">1184 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLimit1</span>
+                <span class="method-start">1274 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLimit200</span>
+                <span class="method-start">1340 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLimitCount20</span>
+                <span class="method-start">1471 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.MediaTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAudiobookMedia</span>
+                <span class="method-start">1566 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDefaultMovie</span>
+                <span class="method-start">1594 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDefaultMusicBand</span>
+                <span class="method-start">1631 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDefaultSong</span>
+                <span class="method-start">1658 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEbookMedia</span>
+                <span class="method-start">1691 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGenreBasedOnMedia</span>
+                <span class="method-start">1708 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMovieMedia</span>
+                <span class="method-start">1725 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPodCastMedia</span>
+                <span class="method-start">1744 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testShortFilmMedia</span>
+                <span class="method-start">1762 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSoftwareMedia</span>
+                <span class="method-start">1787 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTvShowMedia</span>
+                <span class="method-start">1813 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.ResponseStatusCodeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">responseTermCountry</span>
+                <span class="method-start">1830 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">responseTermCountryMedia</span>
+                <span class="method-start">1907 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">responseTermCountryMedialimit</span>
+                <span class="method-start">1966 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

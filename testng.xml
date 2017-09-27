@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Search API Test Suit" junit="false" configfailurepolicy="skip"
+       thread-count="5">
+
+    <!--parallel="instances"-->
+    <!-- Web Font Test Cases -->
+
+    <test name="Country Tests">
+
+        <classes>
+            <class name="TestCases.CountryTest"/>
+        </classes>
+    </test>
+
+    <test name="Media Test">
+
+        <classes>
+            <class name="TestCases.MediaTest"/>
+        </classes>
+    </test>
+
+    <test name="Response Status Code Tests">
+
+        <classes>
+            <class name="TestCases.ResponseStatusCodeTest"/>
+           <!-- <class name="TestCases.ResponseStatusCodeTest">
+            <methods>
+                <include name="responseTermCountry"/>
+                <include name="RunReport"/>
+
+                &lt;!&ndash;<include name="testLoginIsCorrect"/>
+                <include name="testPasswordIsCorrect"/>
+                <include name="clickLoginAndCheckLandingURL"/>
+                <include name="fillAndCheckHoursSunday"/>
+                <include name="fillAndCheckHoursMonday"/>
+                <include name="fillAndCheckHoursTuesday"/>
+                <include name="fillAndCheckHoursWednesday"/>
+                <include name="fillAndCheckHoursThursday"/>
+                <include name="fillAndCheckHoursFriday"/>
+                <include name="fillAndCheckHoursSaturday"/>&ndash;&gt;
+                &lt;!&ndash;<include name="saveAllResults"/>&ndash;&gt;
+                <include name="checkArrivalLocationSuggestion" />
+                <include name="checkArrivalLocationTextField" />
+                <include name="checkDepartureDate" />
+                <include name="checkArrivalDate" />
+                <include name="checkSearchButtonIsClickable" />
+                <include name="checkLandingPageURLiSCorrect" />
+            </methods>
+            </class>-->
+        </classes>
+    </test>
+
+    <test name="Limit Count Tests">
+
+        <classes>
+            <class name="TestCases.LimitCountTest"/>
+        </classes>
+    </test>
+
+</suite>
